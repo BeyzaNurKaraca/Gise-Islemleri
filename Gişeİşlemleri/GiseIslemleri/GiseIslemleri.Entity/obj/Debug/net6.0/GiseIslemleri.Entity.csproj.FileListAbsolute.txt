@@ -1,0 +1,14 @@
+C:\Users\murat\Desktop\MyProjects\GiseIslemleri\GiseIslemleri.Entity\bin\Debug\net6.0\GiseIslemleri.Entity.deps.json
+C:\Users\murat\Desktop\MyProjects\GiseIslemleri\GiseIslemleri.Entity\bin\Debug\net6.0\GiseIslemleri.Entity.runtimeconfig.json
+C:\Users\murat\Desktop\MyProjects\GiseIslemleri\GiseIslemleri.Entity\bin\Debug\net6.0\GiseIslemleri.Entity.dll
+C:\Users\murat\Desktop\MyProjects\GiseIslemleri\GiseIslemleri.Entity\bin\Debug\net6.0\GiseIslemleri.Entity.pdb
+C:\Users\murat\Desktop\MyProjects\GiseIslemleri\GiseIslemleri.Entity\obj\Debug\net6.0\GiseIslemleri.Entity.csproj.AssemblyReference.cache
+C:\Users\murat\Desktop\MyProjects\GiseIslemleri\GiseIslemleri.Entity\obj\Debug\net6.0\GiseIslemleri.Entity.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\murat\Desktop\MyProjects\GiseIslemleri\GiseIslemleri.Entity\obj\Debug\net6.0\GiseIslemleri.Entity.AssemblyInfoInputs.cache
+C:\Users\murat\Desktop\MyProjects\GiseIslemleri\GiseIslemleri.Entity\obj\Debug\net6.0\GiseIslemleri.Entity.AssemblyInfo.cs
+C:\Users\murat\Desktop\MyProjects\GiseIslemleri\GiseIslemleri.Entity\obj\Debug\net6.0\GiseIslemleri.Entity.csproj.CoreCompileInputs.cache
+C:\Users\murat\Desktop\MyProjects\GiseIslemleri\GiseIslemleri.Entity\obj\Debug\net6.0\GiseIslemleri.Entity.dll
+C:\Users\murat\Desktop\MyProjects\GiseIslemleri\GiseIslemleri.Entity\obj\Debug\net6.0\refint\GiseIslemleri.Entity.dll
+C:\Users\murat\Desktop\MyProjects\GiseIslemleri\GiseIslemleri.Entity\obj\Debug\net6.0\GiseIslemleri.Entity.pdb
+C:\Users\murat\Desktop\MyProjects\GiseIslemleri\GiseIslemleri.Entity\obj\Debug\net6.0\GiseIslemleri.Entity.genruntimeconfig.cache
+C:\Users\murat\Desktop\MyProjects\GiseIslemleri\GiseIslemleri.Entity\obj\Debug\net6.0\ref\GiseIslemleri.Entity.dll

@@ -1,0 +1,577 @@
+{
+	"info": {
+		"_postman_id": "a638f53f-6d8c-4d8b-b353-5a558b727a56",
+		"name": "GiseIslemleri",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Auth",
+			"item": [
+				{
+					"name": "Register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"firstName\": \"Ayşe\",\r\n  \"lastName\": \"Deniz\",\r\n  \"email\": \"test@mail.com\",\r\n  \"password\": \"test\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5262/api/Auth/register",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5262",
+							"path": [
+								"api",
+								"Auth",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"email\": \"admin@mail.com\",\r\n  \"password\": \"admin\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5262/api/Auth/Login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5262",
+							"path": [
+								"api",
+								"Auth",
+								"Login"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "ListUser",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiYWRtaW5AbWFpbC5jb20iLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiIzIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvbmFtZWlkZW50aWZpZXIiOiIzN2UxYTE4NC01YjA1LTQ2NmEtYTRkMS0xMTNjZjIwMjhlOTEiLCJuYmYiOjE2NTAyMjg1MDcsImV4cCI6MTY1MDMxNDkwNywiaXNzIjoid3d3LnRva2VuLWlzc3Vlci5jb20iLCJhdWQiOiJ3d3cudG9rZW4tYXVkaWVuY2UuY29tIn0.J7ldh2tYbg5lt2w2qTr7lb0xUyRHqzRpHo1Auv3x33w\"",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5262/api/User/List",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5262",
+							"path": [
+								"api",
+								"User",
+								"List"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": "",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "FindUser",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiYWRtaW5AbWFpbC5jb20iLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiIzIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvbmFtZWlkZW50aWZpZXIiOiI1NjRhYTdkMi1lZjExLTQ4NWYtYjFlZC03MmY3ODQ1OTM3YTUiLCJuYmYiOjE2NTAyMjgwNzAsImV4cCI6MTY1MDMxNDQ3MCwiaXNzIjoid3d3LnRva2VuLWlzc3Vlci5jb20iLCJhdWQiOiJ3d3cudG9rZW4tYXVkaWVuY2UuY29tIn0.0eqTifphpZaaggIsYXS_lYHNS_P2lJMniMKmE8o70Jc\"",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5262/api/User/Find/8",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5262",
+							"path": [
+								"api",
+								"User",
+								"Find",
+								"8"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UpdateUser",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"firstname\": \"Murat\",\r\n  \"surname\": \"Kemerci\",\r\n  \"userEmail\": \"admin@mail.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5262/api/User/Update/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5262",
+							"path": [
+								"api",
+								"User",
+								"Update",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UpdateUserRole",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"userRoleID\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5262/api/User/UpdateUserRole/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5262",
+							"path": [
+								"api",
+								"User",
+								"UpdateUserRole",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeleteUser",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5262/api/User/delete/8",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5262",
+							"path": [
+								"api",
+								"User",
+								"delete",
+								"8"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "New Request",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Subscriptions",
+			"item": [
+				{
+					"name": "ListSubs",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5262/api/Subscription/List",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5262",
+							"path": [
+								"api",
+								"Subscription",
+								"List"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "FindSub",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5262/api/Subscription/Find/15",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5262",
+							"path": [
+								"api",
+								"Subscription",
+								"Find",
+								"15"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "NewSubscription",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"companyName\": \"Teknosa\",\r\n  \"deposit\": 1000,\r\n  \"subscriptionDate\": \"2022-04-17T20:53:43.805Z\",\r\n  \"status\": true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5262/api/Subscription/NewSubscription/7",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5262",
+							"path": [
+								"api",
+								"Subscription",
+								"NewSubscription",
+								"7"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UpdateSubscription",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"companyName\": \"Vatan\",\r\n  \"deposit\": 1000,\r\n  \"subscriptionDate\": \"2022-04-17T21:11:11.058Z\",\r\n  \"status\": true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5262/api/Subscription/UpdateSubscription/10",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5262",
+							"path": [
+								"api",
+								"Subscription",
+								"UpdateSubscription",
+								"10"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UpdateSubscriptionStatus",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5262/api/Subscription/UpdateSubscriptionStatus/15",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5262",
+							"path": [
+								"api",
+								"Subscription",
+								"UpdateSubscriptionStatus",
+								"15"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeleteSubscriptionStatus Copy",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"companyName\": \"Vatan\",\r\n  \"deposit\": 1000,\r\n  \"subscriptionDate\": \"2022-04-17T21:11:11.058Z\",\r\n  \"status\": true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5262/api/Subscription/DeleteSubscription/15",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5262",
+							"path": [
+								"api",
+								"Subscription",
+								"DeleteSubscription",
+								"15"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Bill",
+			"item": [
+				{
+					"name": "List",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5262/api/Bill/List",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5262",
+							"path": [
+								"api",
+								"Bill",
+								"List"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PaidBill",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5262/api/Bill/PaidBill/10",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5262",
+							"path": [
+								"api",
+								"Bill",
+								"PaidBill",
+								"10"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UnPaidBill",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5262/api/Bill/UnPaidBillList/10",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5262",
+							"path": [
+								"api",
+								"Bill",
+								"UnPaidBillList",
+								"10"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "FindBill",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5262/api/Bill/Find/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5262",
+							"path": [
+								"api",
+								"Bill",
+								"Find",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "NewBill",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"debt\": 234,\r\n  \"billinDate\": \"2022-04-17T22:45:13.746Z\",\r\n  \"duaDate\": \"2022-04-17T22:45:13.746Z\",\r\n  \"status\": false,\r\n  \"subscriptionId\": 0\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5262/api/Bill/NewBill/15",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5262",
+							"path": [
+								"api",
+								"Bill",
+								"NewBill",
+								"15"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PayBill",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5262/api/Bill/PayBill/3?payment=2135321523",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5262",
+							"path": [
+								"api",
+								"Bill",
+								"PayBill",
+								"3"
+							],
+							"query": [
+								{
+									"key": "payment",
+									"value": "2135321523"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeleteBill",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5262/api/Bill/DeleteBill/4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5262",
+							"path": [
+								"api",
+								"Bill",
+								"DeleteBill",
+								"4"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
